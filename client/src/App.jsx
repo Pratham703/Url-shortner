@@ -117,7 +117,7 @@ function App() {
           </div>
         </div>
         <footer>
-        <p>Developed by <a href="https://www.linkedin.com/in/vaibhav-bhatt-900b46210/">Vaibhav Bhatt ❤️</a></p>
+        <p>Developed by <a href="https://www.linkedin.com/in/pratham-goyal-96464727a/">Pratham Goyal ❤️</a></p>
       </footer>
       </div>
     </div>
