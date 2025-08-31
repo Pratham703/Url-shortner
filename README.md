@@ -7,7 +7,7 @@ A full-stack URL shortening service with click tracking and analytics, built as 
 
 ## 🚀 Live Demo & Repository
 
-- **GitHub Repository:** https://github.com/vaibhav211002/URL-Shortner  
+- **GitHub Repository:** https://github.com/Pratham703/Url-shortner  
 - **Live Demo:** *url-shortner-nv3d.vercel.app/*
 
 ---
