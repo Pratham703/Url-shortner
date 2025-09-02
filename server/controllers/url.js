@@ -2,6 +2,19 @@
 const Url = require("../models/url");
 
 //depreceated package ndd upgraded to esModule
+
+
+// important file 
+
+// total 3 functions 
+
+// generatecode = genrates uuidnanocodes and then stores thecode in the db with the link 
+
+// redirecturl =  
+
+
+
+
 let nanoid;
 (async () => {
     const nanoidModule = await import('nanoid');
@@ -27,13 +40,22 @@ const generateCode = async (req,res)=>{
 const redirectUrl = async (req,res)=>{
     const shortid = req.params.shortid;
     console.log("date "+Date.now());
+
+    // time calculate kiya hai 
+
     const timestamp = Date.now(); 
     const dateObj = new Date(timestamp); 
     const year = dateObj.getFullYear(); 
     const month = String(dateObj.getMonth() + 1).padStart(2, '0'); 
     const day = String(dateObj.getDate()).padStart(2, '0'); 
     const formattedDate = `${year}-${month}-${day}`;
+
+
+    // saaved in db 
+
     const loged = await Url.findOneAndUpdate({id_short: shortid},
+
+
         {$push: 
             {totalClicks: 
                 {timeStops: formattedDate}
@@ -45,6 +67,9 @@ const redirectUrl = async (req,res)=>{
     }
     res.redirect(loged.url);
 }
+
+
+// codelikh search mei ad then you just searchedthe code in the url and just took out the result 
 
 const analyticsUrl = async (req,res)=>{
     const shortid = req.params.shortid;
